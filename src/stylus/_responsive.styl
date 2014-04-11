@@ -1,6 +1,9 @@
 // Small devices (tablets, 768px and up)
 @media (min-width: 768px)
 
+  .grid
+    width 750px
+
   [class*="column_sm-"]
     float left
 
@@ -10,8 +13,16 @@
 
     createOffset(sm, 12)
 
+  .footer__item
+    font-size (18/16)*1em
+    margin-top 0
+    margin-bottom 50px
+
 // Medium devices (desktops, 992px and up)
 @media (min-width: 992px)
+
+  .grid
+    width 970px
 
   [class*="column_md-"]
     float left
@@ -22,14 +33,12 @@
 
     createOffset(md, 12)
 
-// Large devices (large desktops, 1200px and up)
-@media (min-width: 1170px)
+  .main
+    padding-top 50px
 
-  [class*="column_lg-"]
-    float left
-
-  .column
-
-    setColumn(lg, 12)
-
-    createOffset(lg, 12)
+  .footer__item
+    text-align left
+    font-size (18/16)*1em
+    float none !important
+    width auto
+    margin-bottom 0  
